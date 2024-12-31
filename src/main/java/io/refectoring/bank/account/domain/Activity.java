@@ -1,4 +1,4 @@
-package io.refectoring.bank.domain;
+package io.refectoring.bank.account.domain;
 
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;

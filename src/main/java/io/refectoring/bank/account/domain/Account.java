@@ -1,4 +1,4 @@
-package io.refectoring.bank.domain;
+package io.refectoring.bank.account.domain;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
@@ -12,6 +12,18 @@ public class Account {
     private AccountId id;
     private Money baselineBalance;
     private ActivityWindow activityWindow;
+
+    public static Account withId(
+            AccountId accountId,
+            Money baselineBalance,
+            ActivityWindow activityWindow
+    ) {
+        return new Account(accountId, baselineBalance, activityWindow);
+    }
+
+    public Optional<AccountId> getId() {
+        return Optional.ofNullable(this.id);
+    }
 
     public Money calculateBalance() {
         return Money.add(
