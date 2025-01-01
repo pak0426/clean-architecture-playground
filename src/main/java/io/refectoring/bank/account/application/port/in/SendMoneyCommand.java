@@ -1,4 +1,4 @@
-package io.refectoring.bank.account.application.in;
+package io.refectoring.bank.account.application.port.in;
 
 import io.refectoring.bank.account.domain.Account.AccountId;
 import io.refectoring.bank.account.domain.Money;

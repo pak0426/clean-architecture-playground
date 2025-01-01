@@ -1,10 +1,10 @@
 package io.refectoring.bank.account.application.service;
 
-import io.refectoring.bank.account.application.in.SendMoneyCommand;
-import io.refectoring.bank.account.application.in.SendMoneyUseCase;
-import io.refectoring.bank.account.application.out.AccountLock;
-import io.refectoring.bank.account.application.out.LoadAccountPort;
-import io.refectoring.bank.account.application.out.UpdateAccountStatePort;
+import io.refectoring.bank.account.application.port.in.SendMoneyCommand;
+import io.refectoring.bank.account.application.port.in.SendMoneyUseCase;
+import io.refectoring.bank.account.application.port.out.AccountLock;
+import io.refectoring.bank.account.application.port.out.LoadAccountPort;
+import io.refectoring.bank.account.application.port.out.UpdateAccountStatePort;
 import lombok.RequiredArgsConstructor;
 import org.springframework.transaction.annotation.Transactional;
 
