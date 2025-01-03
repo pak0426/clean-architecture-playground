@@ -13,11 +13,18 @@ public class Account {
     private Money baselineBalance;
     private ActivityWindow activityWindow;
 
-    public static Account withId(
+    public static Account withoutId(
             AccountId accountId,
             Money baselineBalance,
             ActivityWindow activityWindow
     ) {
+        return new Account(accountId, baselineBalance, activityWindow);
+    }
+
+    public static Account withId(
+            AccountId accountId,
+            Money baselineBalance,
+            ActivityWindow activityWindow) {
         return new Account(accountId, baselineBalance, activityWindow);
     }
 
