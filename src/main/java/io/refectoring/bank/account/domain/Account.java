@@ -2,11 +2,13 @@ package io.refectoring.bank.account.domain;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 import lombok.Value;
 
 import java.time.LocalDateTime;
 import java.util.Optional;
 
+@Getter
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 public class Account {
     private AccountId id;
