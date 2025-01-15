@@ -4,16 +4,16 @@ import io.refactoring.bank.account.application.port.out.LoadAccountPort;
 import io.refactoring.bank.account.application.port.out.UpdateAccountStatePort;
 import io.refactoring.bank.account.domain.Account;
 import io.refactoring.bank.account.domain.Activity;
+import io.refactoring.bank.common.PersistenceAdapter;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
 import static io.refactoring.bank.account.domain.Account.*;
 
-@Component
+@PersistenceAdapter
 @RequiredArgsConstructor
 public class AccountPersistenceAdapter implements LoadAccountPort, UpdateAccountStatePort {
 
