@@ -7,7 +7,7 @@ import org.springframework.data.repository.query.Param;
 import java.time.LocalDateTime;
 import java.util.List;
 
-interface ActivityRepository extends JpaRepository<ActivityJpaEntity, Long> {
+public interface ActivityRepository extends JpaRepository<ActivityJpaEntity, Long> {
 
     @Query("select a from ActivityJpaEntity a " +
             "where a.ownerAccountId = :ownerAccountId " +
