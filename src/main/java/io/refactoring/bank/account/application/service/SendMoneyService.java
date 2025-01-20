@@ -6,13 +6,14 @@ import io.refactoring.bank.account.application.port.out.AccountLock;
 import io.refactoring.bank.account.application.port.out.LoadAccountPort;
 import io.refactoring.bank.account.application.port.out.UpdateAccountStatePort;
 import io.refactoring.bank.account.domain.Account;
+import io.refactoring.bank.common.UseCase;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
 
-@Component
+@UseCase
 @Transactional
 @RequiredArgsConstructor
 public class SendMoneyService implements SendMoneyUseCase {
