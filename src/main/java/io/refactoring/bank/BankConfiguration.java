@@ -1,4 +1,4 @@
-package io.refactoring.bank.account;
+package io.refactoring.bank;
 
 import io.refactoring.bank.account.application.service.MoneyTransferProperties;
 import io.refactoring.bank.account.domain.Money;
